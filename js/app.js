@@ -10,7 +10,7 @@ app.controller('listCtrl', ['$scope', function($scope){
 $scope.persons=[
       {
         "id": 0,
-        "gender": "Male",
+        "gender": "Masculine",
         "name": "Albert Thomas",
         "image": "albert.jpg",
         "phone": "(826) 453-3497",
@@ -18,7 +18,7 @@ $scope.persons=[
       },
       {
         "id": 1,
-        "gender": "Female",
+        "gender": "Feminine",
         "name": "Anna Williams",
         "image": "anna.jpg",
         "phone": "(824) 438-2499",
@@ -26,7 +26,7 @@ $scope.persons=[
       },
       {
         "id": 2,
-        "gender": "Female",
+        "gender": "Feminine",
         "name": "Eva Lewis",
         "image": "eva.jpg",
         "phone": "(817) 512-2258",
@@ -34,7 +34,7 @@ $scope.persons=[
       },
       {
         "id": 3,
-        "gender": "Female",
+        "gender": "Feminine",
         "name": "Jane Patricks",
         "image": "jane.jpg",
         "phone": "(842) 413-3023",
@@ -42,7 +42,7 @@ $scope.persons=[
       },
       {
         "id": 4,
-        "gender": "Female",
+        "gender": "Feminine",
         "name": "Laura Smith",
         "image": "laura.jpg",
         "phone": "(966) 520-2696",
@@ -50,7 +50,7 @@ $scope.persons=[
       },
       {
         "id": 5,
-        "gender": "Male",
+        "gender": "Masculine",
         "name": "Martin Pox",
         "image": "martin.jpg",
         "phone": "(996) 595-3896",
@@ -58,7 +58,7 @@ $scope.persons=[
       },
       {
         "id": 6,
-        "gender": "Male",
+        "gender": "Masculine",
         "name": "Peter Piazza",
         "image": "peter.jpg",
         "phone": "(967) 527-3286",
@@ -66,7 +66,7 @@ $scope.persons=[
       },
       {
         "id": 7,
-        "gender": "Male",
+        "gender": "Masculine",
         "name": "Tom James",
         "image": "tom.jpg",
         "phone": "(994) 465-3542",
@@ -74,7 +74,7 @@ $scope.persons=[
       },
       {
         "id": 8,
-        "gender": "Male",
+        "gender": "Masculine",
         "name": "Conan O'Brien",
         "image": "conan.jpg",
         "phone": "(848) 499-2977",
@@ -82,7 +82,7 @@ $scope.persons=[
       },
       {
         "id": 9,
-        "gender": "Female",
+        "gender": "Feminine",
         "name": "Louis Daniels",
         "image": "louis.jpg",
         "phone": "(982) 580-3235",

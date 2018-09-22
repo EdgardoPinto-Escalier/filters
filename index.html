@@ -34,6 +34,22 @@
             <h4>Using ng-repeat</h4>
             <hr>
 
+            <div class="row">
+                SEARCH:
+                <br>
+                <input type="text" ng-model="search.name" class="form-control" placeholder="Search for a person here...">
+                <br>
+
+                GENDER:
+                <br>
+                <select ng-model="search.gender" class="form-control">
+                    <option value="">Both</option>
+                    <option value="Feminine">Feminine</option>
+                    <option value="Masculine">Masculine</option>
+                </select>
+                <br>
+            </div>
+
             <table class="table table-striped">
                 <tr>
                     <th>IMAGE</th>
@@ -43,7 +59,7 @@
                     <th>MOBILE</th>
                 </tr>
 
-                <tr ng-repeat="person in persons">
+                <tr ng-repeat="person in persons | filter:search">
                     <td><img ng-src="img/{{ person.image }}" class="image img-circle"></td>
                     <td>{{ person.name }}</td>
                     <td>{{ person.gender }}</td>
