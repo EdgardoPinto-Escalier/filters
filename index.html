@@ -19,8 +19,11 @@
         <style>
             .image{
                 width: 80px;
-                height: 80px;
-                
+                height: 80px;  
+            }
+
+            .cursor {
+                cursor: pointer;
             }
 
         </style>
@@ -53,13 +56,13 @@
             <table class="table table-striped">
                 <tr>
                     <th>IMAGE</th>
-                    <th>NAME</th>
+                    <th><a class="cursor" ng-click="reverse = !reverse;">NAME</a></th>
                     <th>GENDER</th>
                     <th>PHONE</th>
                     <th>MOBILE</th>
                 </tr>
 
-                <tr ng-repeat="person in persons | filter:search">
+                <tr ng-repeat="person in persons | filter:search | orderBy:'name':reverse ">
                     <td><img ng-src="img/{{ person.image }}" class="image img-circle"></td>
                     <td>{{ person.name }}</td>
                     <td>{{ person.gender }}</td>
