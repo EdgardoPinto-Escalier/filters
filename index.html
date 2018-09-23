@@ -56,8 +56,8 @@
             <table class="table table-striped">
                 <tr>
                     <th>IMAGE</th>
-                    <th><a class="cursor" ng-click="reverse = !reverse;">NAME</a></th>
-                    <th>GENDER</th>
+                    <th><a class="cursor" ng-click="column='name'; reverse = !reverse;">NAME</a></th>
+                    <th><a class="cursor" ng-click="column='gender'; reverse = !reverse;">GENDER</th>
                     <th>PHONE</th>
                     <th>MOBILE</th>
                 </tr>
@@ -65,7 +65,7 @@
                 <tr ng-repeat="person in persons | filter:search | orderBy:'name':reverse ">
                     <td><img ng-src="img/{{ person.image }}" class="image img-circle"></td>
                     <td>{{ person.name }}</td>
-                    <td>{{ person.gender }}</td>
+                    <td>{{ person.gender }}</td> 
                     <td>{{ person.phone }}</td>
                     <td>{{ person.mobile }}</td>
                 </tr>
